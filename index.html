@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jogo Pedra, Papel e Tesoura</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/css.css">
+</head>
+<body>
+    <!--Div do projeto inteiro-->
+    <div id="AllProject">
+        <h1>Pedra, Papel e Tesoura</h1>
+
+        <!--Div que vai deixar organizado o placar-->
+        <div id="placar">
+            <div class="jogador">
+                Jogador <br> 
+                <span id="placarJogador">0</span>
+            </div>
+            <div class="Computador">
+                Computador <br> 
+                <span id="placarComputador">0</span>
+            </div>
+        </div>
+
+        <!--Div que vai deixar organizado as imagens-->
+        <div id="botoes">
+            <div class="Papel">
+                <p>Papel</p>
+                <img src="img/papel.jpg" alt="papel" id="papel" onclick="jogada('Papel')">
+            </div>
+            <div class="Pedra">
+                <p>Pedra</p>
+                <img src="img/pedra.jpg" alt="pedra" id="pedra" onclick="jogada('Pedra')">
+            </div>
+            <div class="Tesoura">
+                <p>Tesoura</p>
+                <img src="img/tesoura.jpg" alt="tesoura" id="tesoura" onclick="jogada('Tesoura')">
+            </div>
+        </div>
+
+        <!--Div que vai separar a resposta do Computador-->
+        <div id="Computador">
+          Computador: <h1 class="resultadoC"></h1>
+        </div>
+        <br>
+            <!--Essa é a parte onde vai sair o resultado da rodada-->
+            <h1 id="Resultado"></h1>
+    </div>
+
+    <script src="js/JavaScript.js"></script>
+</body>
+</html>
