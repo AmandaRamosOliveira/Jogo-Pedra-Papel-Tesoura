@@ -11,7 +11,6 @@
 #placar{
     display: flex;
     gap: 30px;
-
 }
 #botoes{
     display: flex;
@@ -21,4 +20,35 @@
 }
 #Computador{
     margin-top: 30px;
+}
+
+@media (max-width: 600px) {
+ 
+  #AllProject {
+    width: 90%;  
+    margin-top: 20px;
+  }
+
+  #placar {
+    flex-direction: row;  
+    gap: 10px;  
+    align-items: center;  
+  }
+
+
+  #botoes {
+    flex-wrap: wrap;  
+    justify-content: center;  
+    gap: 20px;  
+    margin-top: 10px;
+  }
+
+ 
+  h1 {
+    font-size: 18px;  
+  }
+
+  #Computador {
+    margin-top: 15px;
+  }
 }
